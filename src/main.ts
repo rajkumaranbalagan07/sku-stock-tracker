@@ -20,7 +20,6 @@ async function bootstrap() {
     }),
   );
   app.use(helmet());
-  // app.enableCors();
   app.use(json({ limit: '50mb' }));
 
   const options = new DocumentBuilder()
