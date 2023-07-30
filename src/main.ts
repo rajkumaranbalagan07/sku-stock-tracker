@@ -27,7 +27,7 @@ async function bootstrap() {
     .setTitle('Stock Tracker')
     .setDescription(`Stock Tracker related API'S`)
     .setVersion('1.0')
-    .addServer('http://127.0.0.1:5000')
+    .addServer('http://127.0.0.1:4000')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
