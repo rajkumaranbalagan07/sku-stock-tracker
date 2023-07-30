@@ -37,4 +37,20 @@ export class StockService {
 
     return { sku, qty };
   }
+
+  async getAllSkus(): Promise<{ sku: string; qty: number }[]> {
+    try {
+      let stockJSONData = stockData['default'];
+      const skus = stockJSONData.map((item) => ({
+        sku: item.sku,
+        qty: item.stock,
+      }));
+      return skus;
+    } catch (error) {
+      console.error('An error occurred while fetching all SKUs: ', error);
+      throw new InternalServerErrorException(
+        'An error occurred while fetching all SKUs',
+      );
+    }
+  }
 }

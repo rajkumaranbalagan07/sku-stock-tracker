@@ -41,7 +41,7 @@ async function bootstrap() {
   );
 
   await app.listen(
-    configService.get('PORT') ? configService.get('PORT') : 3000,
+    configService.get('PORT') ? configService.get('PORT') : 4000,
     '0.0.0.0',
   );
 
