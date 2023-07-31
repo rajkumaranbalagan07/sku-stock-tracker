@@ -15,17 +15,6 @@ import { StockService } from './stock.service';
 export class StockController {
   constructor(private readonly stockService: StockService) {}
 
-  // @Post('sku')
-  // async stock(@Body() skuDto: SkuDto) {
-  //   try {
-  //     const result = await this.stockService.getStockLevel(skuDto.sku);
-  //     return result;
-  //   } catch (error) {
-  //     console.error('An error occurred while processing your request: ', error);
-  //     throw error;
-  //   }
-  // }
-
   @Get('sku/:sku')
   async stock(@Param('sku') sku: string) {
     try {
