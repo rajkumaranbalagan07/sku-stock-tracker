@@ -13,6 +13,7 @@ First, clone the repository:
 
 bash
 git clone https://github.com/rajkumaranbalagan07/sku-stock-tracker.git
+
 cd sku-stock-tracker
 
 Then, install the dependencies:
