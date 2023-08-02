@@ -18,19 +18,11 @@ cd sku-stock-tracker
 
 Then, install the dependencies:
 
-# using npm
-
-bash
-
 npm install
 
 ## Running the Application
 
 To start the Nest.js server, run:
-
-# using npm
-
-bash
 
 npm start
 
