@@ -20,6 +20,8 @@ Then, install the dependencies:
 
 # using npm
 
+bash
+
 npm install
 
 ## Running the Application
@@ -27,6 +29,8 @@ npm install
 To start the Nest.js server, run:
 
 # using npm
+
+bash
 
 npm start
 
